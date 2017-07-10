@@ -628,6 +628,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #26796F; }
 
+.intro-text {
+  text-shadow: 1px 3px 1px black; }
+
 .text-muted {
   color: #36ad9f; }
 
