@@ -1,7 +1,5 @@
 @import "variables.scss";
 @import "mixins.scss";
-
-
 // Global Components
 
 body {
@@ -10,7 +8,7 @@ body {
 }
 
 .text-muted {
-    color: $gray-light;
+    color: $gray-darker;
 }
 
 .text-primary {
@@ -87,13 +85,13 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-brand {
         color: $theme-primary;
         @include script-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            color: darken($theme-primary, 10%);
-        }
-    }
+    //     &:hover,
+    //     &:focus,
+    //     &:active,
+    //     &.active {
+    //         color: $gray-light;
+    //     }
+    // }  nije nista promenilo
     .navbar-collapse {
         border-color: fade-out(white, .02);
     }
@@ -108,13 +106,25 @@ h1, h2, h3, h4, h5, h6 {
             background-color: $theme-primary;
         }
     }
+
+    // .inline {
+    //     li {
+    //         padding:10px 5px;
+    //         a {
+    //           display: inline;
+    //           padding: 10px;
+    //         }
+    //     }
+    // }
     .nav {
         li {
+            display: inline;--------
             a {
                 @include heading-font;
-                font-weight: 400;
+                font-weight: 700;-------
+                font-size: 16px;------
                 letter-spacing: 1px;
-                color: white;
+                color: $theme-primary;-----
                 &:hover,
                 &:focus {
                     color: $theme-primary;
@@ -123,37 +133,47 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
-    .navbar-nav>.active>a {
-        border-radius: 0;
-        color: white;
-        background-color: $theme-primary;
-    }
-    .navbar-nav>.active>a:hover,
-    .navbar-nav>.active>a:focus {
-        color: white;
-        background-color: darken($theme-primary, 10%);
-    }
+
+
+  // .navbar-nav>.active>a {
+  //     border-radius: 3px;
+  //     color: #26796f;
+  //     background-color: darken($gray-lighter, 10%);
+  //
+  //     &:hover,
+  //     &:focus {
+  //       color: #26796f;
+  //       border-radius: 3px;
+  //       background-color: darken($gray-lighter, 10%);
+  //     }
+  // }  nije nista promenilo osim border radiusa
 }
+
 
 @media(min-width:768px) {
     .navbar-custom {
         background-color: transparent;
-        padding: 25px 0;
+        // padding: 10px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
-            font-size: 2em;
+            // font-size: 1.5em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
         }
-        .navbar-nav>.active>a {
-            border-radius: 3px;
+        // .navbar-nav>.active>a {
+        //     border-radius: 3px;
+        // }
+        // .navbar-nav>li>a {
+        //     padding: 15px 15px;  nije nista promenilo na bolje
         }
+
     }
 }
+
 
 // Navbar Change on Scroll
 
@@ -164,6 +184,25 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-brand {
             font-size: 1.5em;
         }
+    // .nav>li>a {
+    //     color:white;
+    // }
+    // .nav>.active>a {
+    //   color:#26796f;
+    // }
+    // .nav>li>a:focus,
+    // .nav>li>a:hover {
+    //     color:#26796f;
+    //     border-radius: 3px;
+    }
+  }
+}
+@media(max-width:992px) {
+    .navbar-custom {
+      .navbar-nav>li>a {
+          padding:15px 5px;
+          font-size: 14px;
+      }
     }
 }
 
@@ -172,6 +211,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
+    // margin-top: 70px; nije ubaceno
     @include background-cover;
     text-align: center;
     color: white;
@@ -221,30 +261,34 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
-    h2.section-heading {
-        font-size: 40px;
+    // padding: 50px 0;
+    // h2.section-heading {
+    //     font-size: 32px;
         margin-top: 0;
-        margin-bottom: 15px;
+        // margin-bottom: 50px;
     }
     h3.section-subheading {
         font-size: 16px;
+        // line-height: 25px; nije ubaceno
         @include serif-font;
         text-transform: none;
         font-style: italic;
         font-weight: 400;
         margin-bottom: 75px;
+          p {
+            // font-size: 16px;
+          }
     }
 }
 
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
-}
+// @media(min-width:768px) {
+//     section {
+//         padding: 100px 0;
+//     }
+// }
 
-// // Services Section
-//
+// Services Section
+
 // .service-heading {
 //     margin: 15px 0;
 //     text-transform: none;
@@ -254,7 +298,7 @@ section {
 
 #portfolio {
     .portfolio-item {
-        margin: 0 0 15px;
+        margin: 0px 0 15px;
         right: 0;
         .portfolio-link {
             display: block;
@@ -309,13 +353,17 @@ section {
                 margin: 0;
             }
         }
+        // img {
+        //   width: 400px;
+        //   height: 200px;
+        // }
     }
     * {
         z-index: 2;
     }
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     #portfolio {
         .portfolio-item {
             margin: 0 0 30px;
@@ -533,6 +581,52 @@ aside.clients {
     }
 }
 
+// Pricelist
+
+// section#pricelist {
+//   table {
+//     margin:0 auto;
+//      th, td  {
+//       border: 1px solid $gray-darker;
+//     }
+//     th {
+//       font-size: 16px;
+//       background-color: $gray-darker;
+//       color:white;
+//       padding:10px;
+//     }
+//     td {
+//       font-size: 14px;
+//       color:$gray-darker;
+//       padding:10px;
+//     }
+//   }
+// }
+// // Location section
+//
+// section#location {
+//   .container {
+//     padding-right:0;
+//     padding-left:0;
+//     width: 100%;
+//   }
+//   span {
+//     font-weight: 700;
+//   }
+//   #map {
+//     height: 400px;
+//     width: 100%;
+//     margin-bottom: 40px;
+//   }
+// }
+
+// @media(max-width:320px) {
+//   section#location {
+//     p {
+//       font-size: 14px;
+//     }
+//   }
+// }
 // Contact Section
 
 section#contact {
@@ -540,6 +634,9 @@ section#contact {
     background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
+    // h2.section-heading {
+    //   margin-bottom: 0;
+    // }
     .section-heading {
         color: white;
     }
@@ -560,26 +657,26 @@ section#contact {
         border-color: $theme-primary;
         box-shadow: none;
     }
-    ::-webkit-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-ms-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
+    // ::-webkit-input-placeholder {
+    //    @include heading-font;
+    //    font-weight: 700;
+    //    color:  $gray-darker;
+    // }
+    // :-moz-placeholder { /* Firefox 18- */
+    //    @include heading-font;
+    //    font-weight: 700;
+    //    color:  $gray-darker;
+    // }
+    // ::-moz-placeholder {  /* Firefox 19+ */
+    //    @include heading-font;
+    //    font-weight: 700;
+    //    color:  $gray-darker;
+    // }
+    // :-ms-input-placeholder {
+    //    @include heading-font;
+    //    font-weight: 700;
+    //    color:  $gray-darker;
+    // }
     .text-danger {
         color: $theme-danger;
     }
@@ -590,10 +687,12 @@ section#contact {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #242424;
     span.copyright {
         line-height: 40px;
         @include heading-font;
         text-transform: none;
+        color:#d3c7c7;
     }
     ul.quicklinks {
         margin-bottom: 0;
@@ -665,9 +764,11 @@ ul.social-buttons {
             font-style: italic;
             font-size: 16px;
         }
-        ul.list-inline {
+        ul.list-block {
             margin-bottom: 30px;
             margin-top: 0;
+            list-style-type: none;
+            line-height: 25px;
         }
         img {
             margin-bottom: 30px;
@@ -737,5 +838,3 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: $theme-primary;
 }
-
-@import "agency_custom.scss";

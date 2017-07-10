@@ -1,0 +1,215 @@
+
+.text-muted {
+    color: $gray-darker;
+}
+
+.text-primary {
+    color: $theme-primary;
+}
+
+  .inline {
+      li {
+          padding:10px 5px;
+          a {
+            display: inline-block;;
+            padding: 2px;
+          }
+      }
+  }
+
+  .nav {
+      li {
+          display: inline;
+          a {
+            font-weight: 700;
+            font-size: 16px;
+            color: $theme-primary;
+          }
+      }
+  }
+
+  .navbar-custom {
+    .navbar-brand {
+      &.active {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $gray-light;
+          }
+      }
+    }
+    .nav {
+      li {
+        a {
+          font-weight: 700;
+          color:#26796f;
+          &:hover,
+          &:active {
+            border-radius: 3px;
+          }
+        }
+
+        &.languages {
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+
+// Navbar Change on Scroll
+@media (min-width:768px) and (max-width: 992px){
+  .container {
+    max-width: 780px;
+    width: inherit;
+  }
+
+  .navbar-custom {
+    .nav {
+      li {
+        a {
+          padding: 10px 5px;
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+}
+@media(min-width:768px) {
+  .navbar-custom {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+    &.affix-top {
+      height: 70px;
+      position: relative;
+      margin: 0;
+      padding: 10px 0px;
+    }
+    &.affix{
+      height: 70px;
+
+      .nav {
+        li {
+          a {
+            color:white;
+            &:focus,
+            &:hover {
+              color:#26796f;
+              border-radius: 3px;
+            }
+          }
+        }
+        .active {
+          a {
+            color:#26796f;
+            background-color: #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  // padding:50px 0;
+  h2.section-heading {
+      font-size: 32px;
+      padding-bottom: 20px;
+  }
+    h3.section-subheading {
+      p {
+        font-size: 16px;
+      }
+    }
+}
+
+// Portfolio section
+
+section#portfolio {
+  .portfolio-item .portfolio-caption {
+    position: relative;
+    top: -49px;
+    color: white;
+    background: rgba(54, 173, 159, 0.8);
+    pointer-events: none;
+    padding: 15px;
+  }
+  img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+section#pricelist {
+  table {
+    margin:0 auto;
+     th, td  {
+      border: 1px solid $gray-darker;
+    }
+    th {
+      font-size: 16px;
+      background-color: $gray-darker;
+      color:white;
+      padding:10px;
+    }
+    td {
+      font-size: 14px;
+      color:$gray-darker;
+      padding:10px;
+    }
+  }
+}
+// Location section
+
+section#location {
+  .container {
+    padding-right:0;
+    padding-left:0;
+    width: 100%;
+  }
+  span, p {
+    color:#36ad9f;
+  }
+  span {
+    font-weight: 700;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+// Contact section
+
+section#contact {
+  h2.section-heading {
+    margin-bottom: 0;
+  }
+  ::-webkit-input-placeholder {
+    color:$gray-darker;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color:$gray-darker;
+  }
+    ::-moz-placeholder {  /* Firefox 19+ */
+    color:$gray-darker;
+  }
+  :-ms-input-placeholder {
+    color:$gray-darker;
+  }
+}
+
+// Footer
+
+footer {
+    background-color: #242424;
+    span.copyright {
+      color:#d3c7c7;
+    }
+}
