@@ -665,13 +665,17 @@ body {
 .navbar-custom .nav li.languages a {
   display: inline-block; }
 
+@media (min-width: 992px) {
+  .navbar-custom .nav li a {
+    font-size: 14px; } }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     max-width: 780px;
     width: inherit; }
   .navbar-custom .nav li a {
     padding: 10px 5px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px; } }
 
 @media (min-width: 768px) {
@@ -693,6 +697,10 @@ body {
     .navbar-custom.affix .nav .active a {
       color: #015077;
       background-color: #eee; } }
+
+@media (max-width: 768px) {
+  .navbar-custom .nav li a {
+    color: white; } }
 
 section h2.section-heading {
   font-size: 32px;
