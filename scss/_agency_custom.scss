@@ -1,4 +1,8 @@
 
+.btn-xl {
+@include button-variant(white, $gray-base ,  $gray-base);
+}
+
 .intro-text {
   text-shadow: 1px 3px 1px black;
 }
@@ -45,10 +49,11 @@
       li {
         a {
           font-weight: 700;
-          color:#26796f;
+          color: $gray-base;
           &:hover,
           &:active {
             border-radius: 3px;
+            color:#015077;
           }
         }
 
@@ -86,6 +91,7 @@
   .navbar-custom {
     .navbar-brand {
         font-size: 1.5em;
+        color:$gray-dark;
     }
     &.affix-top {
       height: 70px;
@@ -102,14 +108,14 @@
             color:white;
             &:focus,
             &:hover {
-              color:#26796f;
+              color:#015077;
               border-radius: 3px;
             }
           }
         }
         .active {
           a {
-            color:#26796f;
+            color:#015077;
             background-color: #eee;
           }
         }
@@ -138,7 +144,7 @@ section#portfolio {
     position: relative;
     top: -49px;
     color: white;
-    background: rgba(54, 173, 159, 0.8);
+    background: rgba(77, 202, 206, 0.8);
     pointer-events: none;
     padding: 15px;
   }
@@ -176,7 +182,7 @@ section#location {
     width: 100%;
   }
   span, p {
-    color:#36ad9f;
+    color:$gray-darker;
   }
   span {
     font-weight: 700;

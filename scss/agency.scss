@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-    @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
     font-weight: 700;
     border-radius: 3px;
@@ -82,10 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: $gray-darker;
+    background-color: $gray-base;
     border-color: transparent;
     .navbar-brand {
-        color: $theme-primary;
+        color: $gray-dark;
         @include script-font;
         &:hover,
         &:focus,
@@ -98,14 +97,14 @@ h1, h2, h3, h4, h5, h6 {
         border-color: fade-out(white, .02);
     }
     .navbar-toggle {
-        background-color: $theme-primary;
-        border-color: $theme-primary;
+        background-color: $gray-dark;
+        border-color: $gray-dark;
         @include heading-font;
         color: white;
         font-size: 12px;
         &:hover,
         &:focus {
-            background-color: $theme-primary;
+            background-color: $gray-dark;
         }
     }
     .nav {
@@ -159,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: $gray-darker;
+        background-color: $gray-base;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
@@ -168,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('http://www.dentistmn.com/wp-content/uploads/2016/01/rr.jpg');
+    background-image: url('../images/pozadina_konacna.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -377,7 +376,7 @@ section {
             height: 80px;
             position: absolute;
             z-index: 100;
-            background-color: $theme-primary;
+            background-color: $gray-base;
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;
