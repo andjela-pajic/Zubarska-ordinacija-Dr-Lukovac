@@ -5,7 +5,7 @@
 $theme-primary:    #0272a9;
 $theme-danger:     #000;
 
-$gray-base:			#4dcace !default;
+$gray-base:			rgb(0,153,204) !default;
 $gray-darker:		lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:			lighten($gray-base, 20%) !default;   // #333
 $gray:				lighten($gray-base, 33.5%) !default; // #555

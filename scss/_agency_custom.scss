@@ -81,6 +81,14 @@
 
 }
 
+@media(max-width:992px) {
+  .table {
+      -webkit-column-count:1;
+      -moz-column-count:1;
+      column-count:1;
+  }
+}
+
 @media (min-width:768px) and (max-width: 992px){
   .container {
     max-width: 780px;
@@ -100,6 +108,9 @@
   }
 
 }
+
+
+
 @media(min-width:768px) {
   .navbar-custom {
     .navbar-brand {
@@ -137,6 +148,7 @@
   }
 }
 
+
 @media(max-width:768px) {
   .navbar-custom {
       .nav {
@@ -170,7 +182,7 @@ section#portfolio {
     position: relative;
     top: -49px;
     color: white;
-    background: rgba(77, 202, 206, 0.8);
+    background: rgba(0, 153, 204, 0.8);
     pointer-events: none;
     padding: 15px;
   }
@@ -181,23 +193,55 @@ section#portfolio {
 }
 
 section#pricelist {
-  table {
-    margin:0 auto;
-     th, td  {
-      border: 1px solid $gray-darker;
-    }
-    th {
-      font-size: 16px;
-      background-color: $gray-darker;
-      color:white;
-      padding:10px;
-    }
-    td {
-      font-size: 14px;
-      color:$gray-darker;
-      padding:10px;
-    }
+  .table {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+      li {
+          list-style-type:none;
+          border:1px solid $gray-darker;
+          padding:10px;
+          line-height: 42px;
+          padding:0 5px;
+      }
+      span {
+        float:right;
+        display: block;
+        padding-left: 5px;
+        width: 67px;
+        border-left:1px solid $gray-darker;
+      }
   }
+  // table {
+  //     margin:0 auto;
+  //   ul {
+  //     margin:0 auto;
+  //     list-style: none;
+  //     li {
+  //       display: block;
+  //       border:1px solid $gray-darker;
+  //       font-size: 14px;
+  //       background-color: $gray-darker;
+  //       padding:10px;
+  //       list-style: none;
+  //     }
+  //   }
+  //
+  //    th, td  {
+  //     border: 1px solid $gray-darker;
+  //   }
+  //   th {
+  //     font-size: 16px;
+  //     background-color: $gray-darker;
+  //     color:white;
+  //     padding:10px;
+  //   }
+  //   td {
+  //     font-size: 14px;
+  //     color:$gray-darker;
+  //     padding:10px;
+  //   }
+  // }
 }
 // Location section
 
