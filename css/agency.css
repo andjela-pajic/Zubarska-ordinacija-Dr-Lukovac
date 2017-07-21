@@ -417,7 +417,6 @@ section {
   .team-member img {
     margin: 0 auto;
     background-color: #7d7474;
-    width: 200px;
     height: 200px; }
   .team-member h4 {
     margin-top: 25px;
@@ -803,4 +802,4 @@ footer {
     column-count: 1;
     font-size: 12px; }
   .fix {
-    font-size: 10px; } }
+    font-size: 12px; } }
