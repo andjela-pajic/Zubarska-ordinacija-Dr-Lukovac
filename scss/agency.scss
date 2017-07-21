@@ -513,6 +513,9 @@ section {
     img {
         margin: 0 auto;
         border: 7px solid white;
+        background-color: #7d7474;
+        width: 200px;
+        height: 200px;
     }
     h4 {
         margin-top: 25px;
@@ -536,9 +539,9 @@ aside.clients {
 
 section#contact {
     background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
+    background-image: url('../images/background_for_contact_field.jpg');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     .section-heading {
         color: white;
     }

@@ -416,7 +416,10 @@ section {
   margin-bottom: 50px; }
   .team-member img {
     margin: 0 auto;
-    border: 7px solid white; }
+    border: 7px solid white;
+    background-color: #7d7474;
+    width: 200px;
+    height: 200px; }
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
@@ -429,9 +432,9 @@ aside.clients img {
 
 section#contact {
   background-color: #12c4ff;
-  background-image: url("../img/map-image.png");
+  background-image: url("../images/background_for_contact_field.jpg");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: repeat; }
   section#contact .section-heading {
     color: white; }
   section#contact .form-group {
@@ -595,28 +598,28 @@ body {
 
 .btn-xl {
   color: white;
-  background-color: #0099cc;
-  border-color: #0099cc; }
+  background-color: #0272a9;
+  border-color: #0272a9; }
   .btn-xl:focus, .btn-xl.focus {
     color: white;
-    background-color: #007399;
-    border-color: #00394d; }
+    background-color: #015077;
+    border-color: #011d2b; }
   .btn-xl:hover {
     color: white;
-    background-color: #007399;
-    border-color: #006b8f; }
+    background-color: #015077;
+    border-color: #01496d; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     color: white;
-    background-color: #007399;
-    border-color: #006b8f; }
+    background-color: #015077;
+    border-color: #01496d; }
     .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
     .open > .btn-xl.dropdown-toggle:hover,
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle.focus {
       color: white;
-      background-color: #005875;
-      border-color: #00394d; }
+      background-color: #013853;
+      border-color: #011d2b; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
@@ -624,17 +627,17 @@ body {
   fieldset[disabled] .btn-xl:hover,
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl.focus {
-    background-color: #0099cc;
-    border-color: #0099cc; }
+    background-color: #0272a9;
+    border-color: #0272a9; }
   .btn-xl .badge {
-    color: #0099cc;
+    color: #0272a9;
     background-color: white; }
 
 .intro-text {
   text-shadow: 1px 3px 1px black; }
 
 .text-muted {
-  color: #12c4ff; }
+  color: #05799f; }
 
 .text-primary {
   color: #0272a9; }
@@ -708,12 +711,23 @@ body {
   .navbar-custom .nav li a {
     color: white; } }
 
-section h2.section-heading {
-  font-size: 32px;
-  padding-bottom: 20px; }
+section {
+  padding: 100px 0 50px 0; }
+  section h2.section-heading {
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: #1b4b62; }
+  section h3.section-subheading p {
+    font-size: 16px; }
 
-section h3.section-subheading p {
-  font-size: 16px; }
+section#about .timeline-image {
+  background-color: white; }
+
+section#about .timeline-background {
+  background-color: #09c; }
+
+section#portfolio .portfolio-item:last-child {
+  margin: 0; }
 
 section#portfolio .portfolio-item .portfolio-caption {
   position: relative;
@@ -733,7 +747,7 @@ section#pricelist .table {
   column-count: 2; }
   section#pricelist .table li {
     list-style-type: none;
-    border: 1px solid #12c4ff;
+    border: 1px solid #05799f;
     padding: 10px;
     line-height: 42px;
     padding: 0 5px; }
@@ -742,7 +756,9 @@ section#pricelist .table {
     display: block;
     padding-left: 5px;
     width: 67px;
-    border-left: 1px solid #12c4ff; }
+    border-left: 1px solid #05799f; }
+    section#pricelist .table span .small {
+      font-size: 10px; }
 
 section#location .container {
   padding-right: 0;
@@ -750,7 +766,7 @@ section#location .container {
   width: 100%; }
 
 section#location span, section#location p {
-  color: #12c4ff; }
+  color: #05799f; }
 
 section#location span {
   font-weight: 700; }
