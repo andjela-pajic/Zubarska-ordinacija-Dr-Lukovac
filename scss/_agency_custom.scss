@@ -67,101 +67,6 @@
   }
 
 
-// Navbar Change on Scroll
-@media (min-width:992px) {
-  .navbar-custom {
-    .nav {
-      li {
-        a {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-}
-
-@media(max-width:992px) {
-  .table {
-      -webkit-column-count:1;
-      -moz-column-count:1;
-      column-count:1;
-  }
-}
-
-@media (min-width:768px) and (max-width: 992px){
-  .container {
-    max-width: 780px;
-    width: inherit;
-  }
-
-  .navbar-custom {
-    .nav {
-      li {
-        a {
-          padding: 10px 5px;
-          font-size: 12px;
-          line-height: 30px;
-        }
-      }
-    }
-  }
-
-}
-
-
-
-@media(min-width:768px) {
-  .navbar-custom {
-    .navbar-brand {
-        font-size: 1.5em;
-        color:$gray-dark;
-    }
-    &.affix-top {
-      height: 70px;
-      position: relative;
-      margin: 0;
-      padding: 10px 0px;
-    }
-    &.affix{
-      height: 70px;
-
-      .nav {
-        li {
-          a {
-            color:white;
-            &:focus,
-            &:hover {
-              color:#015077;
-              border-radius: 3px;
-            }
-          }
-        }
-        .active {
-          a {
-            color:#015077;
-            background-color: #eee;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@media(max-width:768px) {
-  .navbar-custom {
-      .nav {
-        li {
-          a {
-            color:white;
-          }
-        }
-      }
-    }
-}
-
-
 section {
   padding: 100px 0 50px 0;
     h2.section-heading {
@@ -215,18 +120,25 @@ section#pricelist {
     -webkit-column-count:2;
     -moz-column-count:2;
     column-count:2;
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 95%;
       li {
           list-style-type:none;
           border:1px solid #05799f;
-          padding:10px;
           line-height: 42px;
           padding:0 5px;
+          margin-top:-1px;
+
+          &:first-child {
+            margin-top:0;
+          }
       }
       span {
         float:right;
         display: block;
         padding-left: 5px;
-        width: 67px;
+        width: 58px;
         border-left:1px solid #05799f;
 
         .small {
@@ -234,36 +146,6 @@ section#pricelist {
         }
       }
   }
-  // table {
-  //     margin:0 auto;
-  //   ul {
-  //     margin:0 auto;
-  //     list-style: none;
-  //     li {
-  //       display: block;
-  //       border:1px solid $gray-darker;
-  //       font-size: 14px;
-  //       background-color: $gray-darker;
-  //       padding:10px;
-  //       list-style: none;
-  //     }
-  //   }
-  //
-  //    th, td  {
-  //     border: 1px solid $gray-darker;
-  //   }
-  //   th {
-  //     font-size: 16px;
-  //     background-color: $gray-darker;
-  //     color:white;
-  //     padding:10px;
-  //   }
-  //   td {
-  //     font-size: 14px;
-  //     color:$gray-darker;
-  //     padding:10px;
-  //   }
-  // }
 }
 // Location section
 
@@ -312,5 +194,102 @@ footer {
     background-color: #242424;
     span.copyright {
       color:#d3c7c7;
+    }
+}
+
+// Navbar Change on Scroll
+@media (min-width:992px) {
+  .navbar-custom {
+    .nav {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:768px) and (max-width: 992px){
+  .container {
+    max-width: 780px;
+    width: inherit;
+  }
+
+  .navbar-custom {
+    .nav {
+      li {
+        a {
+          padding: 10px 5px;
+          font-size: 12px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media(min-width:768px) {
+  .navbar-custom {
+    .navbar-nav {
+      float:right;
+    }
+    .navbar-brand {
+        font-size: 1.5em;
+        color:$gray-dark;
+    }
+    &.affix-top {
+      height: 70px;
+      position: relative;
+      margin: 0;
+      padding: 10px 0px;
+    }
+    &.affix{
+      height: 70px;
+
+      .nav {
+        li {
+          a {
+            color:white;
+            &:focus,
+            &:hover {
+              color:#015077;
+              border-radius: 3px;
+            }
+          }
+        }
+        .active {
+          a {
+            color:#015077;
+            background-color: #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+  .navbar-custom {
+      .nav {
+        li {
+          a {
+            color:white;
+          }
+        }
+      }
+    }
+  section#pricelist  .table {
+      -webkit-column-count:1;
+      -moz-column-count:1;
+      column-count:1;
+      font-size: 12px;
+    }
+    .fix {
+      font-size: 10px;
     }
 }
