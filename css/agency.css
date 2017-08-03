@@ -681,6 +681,9 @@ section#about .timeline-image {
 section#about .timeline-background {
   background-color: #09c; }
 
+section#team .img-circle {
+  border-radius: 0; }
+
 section#portfolio .portfolio-item:last-child {
   margin: 0; }
 
