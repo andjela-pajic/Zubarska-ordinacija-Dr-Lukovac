@@ -63,7 +63,7 @@
                         <a class="page-scroll text-style" href="#about">About us</a>
                     </li>
                     <li>
-                        <a class="page-scroll text-style" href="#team">Our team</a>
+                        <a class="page-scroll text-style" href="#gallery">Gallery</a>
                     </li>
                     <li>
                         <a class="page-scroll text-style" href="#pricelist">Pricelist</a>
@@ -311,77 +311,67 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our top team</h2>
-                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-6">
                     <div class="team-member">
-                        <img src="images/Ljubomir.jpg" width="200px" height="200px" class="img-responsive img-circle" alt="Dr Ljubomir Lukovac">
+                        <div class="ljubomir img-responsive img-circle"></div>
                         <h4>Dr Ljubomir Lukovac</h4>
                         <p class="text-muted">Dentist,
                           specialist in dental prosthetics,
                           he worked as a military doctor in  garrisons: Celje - Slovenia, VMA - Belgrade,
                           head of Dental Medicine at the Military Academy and General Staff of the Serbian Armed Forces.
                           </p>
-                        <ul class="list-inline social-buttons">
-                            <!-- <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li> -->
-                        </ul>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="team-member">
-                        <img src="images/Nena.jpg" width="200px" class="img-responsive img-circle" alt="Dr Nena Dumović Gagić">
+                        <div class="nena img-responsive img-circle"></div>
                         <h4>Dr Nena Dumović Gagić</h4>
                         <p class="text-muted">Consultant and Public Relationship Manager</p>
-                        <!-- <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul> -->
-                    </div>
-                </div>
-                <!-- <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <!-- <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our top team</h2> -->
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                <!-- </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="images/Ljubomir.jpg" width="200px" height="200px" class="ljubomir img-responsive img-circle" alt="Dr Ljubomir Lukovac">
+                        <h4>Dr Ljubomir Lukovac</h4>
+                        <p class="text-muted">Dentist,
+                          specialist in dental prosthetics,
+                          he worked as a military doctor in  garrisons: Celje - Slovenia, VMA - Belgrade,
+                          head of Dental Medicine at the Military Academy and General Staff of the Serbian Armed Forces.
+                          </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="images/Nena.jpg" width="200px" class="nena img-responsive img-circle" alt="Dr Nena Dumović Gagić">
+                        <h4>Dr Nena Dumović Gagić</h4>
+                        <p class="text-muted">Consultant and Public Relationship Manager</p>
+                    </div>
+                </div>
+              </div>
+                </div>
+            </div> -->
             <!-- <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div> -->
-        </div>
-    </section>
+        <!-- </div>
+    </section> -->
 
     <!-- Clients Aside -->
     <!-- <aside class="clients">
@@ -410,6 +400,77 @@
             </div>
         </div>
     </aside> -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <!-- <div class="container">  -->
+       <!-- <div class="gallery"> -->
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Gallery</h2>
+          </div>
+          <div class="column">
+            <img src="images/dete_malo.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/timski rad_mala.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/pregled zuba_mala.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/slika3_mala.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+                <img src="images/dete_veliko2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+                <img src="images/timski rad.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+                <img src="images/pregled zuba.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+                <img src="images/slika3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <div class="column">
+              <img class="demo" style="width:100%" src="images/dete_veliko2.jpg" onclick="currentSlide(1)" alt="Child dentist">
+            </div>
+
+            <div class="column">
+              <img class="demo" style="width:100%" src="images/timski rad.jpg" onclick="currentSlide(2)" alt="Team work">
+            </div>
+
+            <div class="column">
+              <img class="demo" style="width:100%" src="images/pregled zuba.jpg" onclick="currentSlide(3)" alt="Dentist examination">
+            </div>
+
+            <div class="column">
+              <img class="demo" style="width:100%" src="images/slika3.jpg" onclick="currentSlide(4)" alt="Dentistry Novi Beograd">
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- Pricelist -->
     <section id="pricelist">
@@ -792,6 +853,45 @@
             </div>
         </div>
     </div>
+
+    <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+     slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    </script>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

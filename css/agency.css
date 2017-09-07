@@ -564,7 +564,7 @@ ul.social-buttons {
 
 ::selection {
   text-shadow: none;
-  background: #0272a9; }
+  background: #bbeeff; }
 
 img::selection {
   background: transparent; }
@@ -621,6 +621,9 @@ body {
 .text-primary {
   color: #0272a9; }
 
+* {
+  box-sizing: border-box; }
+
 .inline li {
   padding: 10px 5px; }
   .inline li a {
@@ -660,26 +663,29 @@ section {
   padding: 0;
   margin: 0;
   text-align: center;
-  height: 600px;
+  height: 500px;
   width: 100%; }
   .slider ul.slider-carousel {
-    height: 600px;
+    height: 500px;
     width: 100%;
     padding: 0;
     list-style-type: none; }
     .slider ul.slider-carousel li {
-      height: 600px;
+      height: 500px;
       width: 100%;
       text-align: center; }
     .slider ul.slider-carousel .img1 {
-      background: url("../images/slika1.jpg");
-      background-size: 99.9% 100%; }
+      background: url("../images/slika4.jpg");
+      background-position: center center;
+      background-size: cover; }
     .slider ul.slider-carousel .img2 {
-      background: url("../images/slika2.jpg");
-      background-size: 99.9% 100%; }
+      background: url("../images/slika1.jpg");
+      background-position: center center;
+      background-size: cover; }
     .slider ul.slider-carousel .img3 {
-      background: url("../images/slika3.jpg");
-      background-size: 99.9% 100%; }
+      background: url("../images/slika2.jpg");
+      background-position: center center;
+      background-size: cover; }
   .slider ul.sliderpager li {
     list-style-type: none;
     display: inline-block;
@@ -698,6 +704,22 @@ section#about .timeline-image {
 section#about .timeline-background {
   background-color: #09c; }
 
+section#about .team-member .ljubomir {
+  width: 200px;
+  height: 200px;
+  background: url("../images/Ljubomir.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  background-position-x: center; }
+
+section#about .team-member .nena {
+  width: 200px;
+  height: 200px;
+  background: url("../images/Nena.jpg");
+  background-size: 100%;
+  margin: 0 auto;
+  background-position: center 17%; }
+
 section#portfolio .portfolio-item:last-child {
   margin: 0; }
 
@@ -712,6 +734,125 @@ section#portfolio .portfolio-item .portfolio-caption {
 section#portfolio img {
   width: 400px;
   height: 200px; }
+
+#gallery .row {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+#gallery .row > .column {
+  padding: 0 8px; }
+
+#gallery .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#gallery .column {
+  float: left;
+  width: 25%; }
+
+/* The Modal (background) */
+#gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+#gallery .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+#gallery .close {
+  color: White;
+  position: absolute;
+  top: 11%;
+  right: 1%;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #3aa696; }
+
+#gallery .close:hover,
+#gallery .close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+#gallery .mySlides {
+  display: none; }
+
+#gallery .cursor {
+  cursor: pointer; }
+
+/* Next & previous buttons */
+#gallery .prev,
+#gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+#gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+#gallery .prev:hover,
+#gallery .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Number text (1/3 etc) */
+#gallery .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+#gallery img {
+  margin-bottom: -4px; }
+
+#gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white; }
+  #gallery .caption-container p {
+    margin: 10px 0; }
+
+#gallery .demo {
+  opacity: 0.6; }
+
+#gallery .active,
+#gallery .demo:hover {
+  opacity: 1; }
+
+#gallery img.hover-shadow {
+  transition: 0.3s; }
+
+#gallery .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 section#pricelist .table {
   -webkit-column-count: 2;

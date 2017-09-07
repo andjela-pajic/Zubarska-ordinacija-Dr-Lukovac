@@ -46,8 +46,8 @@
       circular:true,
       scroll:{
         items:1,
-        duration:500,
-        pauseOnHover:true,
+        duration:800,
+        pauseOnHover:false,
       },
       auto:true,
       items: {
@@ -62,5 +62,10 @@
         anchorBuilder:false
       }
     });
+
+
+
+
+
 
 })(jQuery); // End of use strict
